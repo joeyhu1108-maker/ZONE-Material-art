@@ -20,7 +20,13 @@ An original contemporary mixed-media relief painting about [specific conflict], 
 
 ## 配方 2：照片 -> 材料地形
 
-先锁定源图：主体数量、轮廓、姿态、视线、地点特征、关键物件和原图比例。
+先锁定源图：主体数量、轮廓、姿态、视线、地点特征、关键物件和原图比例。再选择一个转译档位：
+
+- 用户明确要求保留身份、肖像、服装、建筑细节或纪实场景 -> `scene-preserving`。
+- 普通“做成材料艺术 / 材料蒙太奇” -> 默认 `semantic-abstract`。
+- 用户反馈“太像原图”“不适合”“不像独立作品”“更抽象”“不要写实”“只保留关系或动作” -> 立即切换 `semantic-abstract`，不再追问。
+
+### 2A. `scene-preserving`
 
 转译规则：
 
@@ -39,10 +45,30 @@ An original contemporary mixed-media relief painting about [specific conflict], 
 Prompt 追加：
 
 ```text
-Preserve the source image's subject count, silhouette, pose, gaze direction, key place cues and original aspect ratio. Translate photographic midtones into a small number of physical material layers; do not trace every edge. Keep identity-bearing features quieter and more precise than the surrounding material field. Recompose only secondary background detail to strengthen the anchor, active boundary and unresolved gap. Unless the source is a night scene or the concept explicitly requires low-key light, keep the material midtones open and readable with soft frontal fill, one shaping side or top light, and only a restrained rim where needed. Use deep black only as a structural anchor; avoid crushed shadows, muddy brown-grey grading, global HDR and grey lifted blacks. Present the final artwork as a dead-on frontal documentation photograph: camera perpendicular to the backing plane, backing edges parallel to the image borders, no visible side face, receding return or three-quarter perspective; physical elements may still project toward the viewer.
+Use scene-preserving translation. Preserve the source image's subject count, silhouette, pose, gaze direction, key place cues and original aspect ratio. Translate photographic midtones into a small number of physical material layers; do not trace every edge. Keep identity-bearing features quieter and more precise than the surrounding material field. Recompose only secondary background detail to strengthen the anchor, active boundary and unresolved gap. Unless the source is a night scene or the concept explicitly requires low-key light, keep the material midtones open and readable with soft frontal fill, one shaping side or top light, and only a restrained rim where needed. Use deep black only as a structural anchor; avoid crushed shadows, muddy brown-grey grading, global HDR and grey lifted blacks. Present the final artwork as a dead-on frontal documentation photograph: camera perpendicular to the backing plane, backing edges parallel to the image borders, no visible side face, receding return or three-quarter perspective; physical elements may still project toward the viewer.
 ```
 
 人物 Prompt 追加规则：单人图加入 `The single figure may be highly abstracted into one continuous material body-vector while preserving the original action, body direction and one or two identity anchors.`；群体图加入 `Use medium abstraction for the group: preserve the exact visible figure count, complete small bodies, relative positions, scale, facing directions and interaction pattern; simplify facial and clothing detail rather than turning people into identical dots or pegs.`
+
+### 2B. `semantic-abstract`
+
+转译规则：
+
+- 源图只作为语义证据。先写出必须保留的主体数量、相对位置、尺度、朝向、主要动作、互动关系与每个主体 1-2 个身份锚点；不保留像素布局、写实面孔、皮肤、服装褶皱或摄影景深。
+- 每个人物对应一个完整材料身体向量。单人用连续体块、倾斜与支撑保留动作；多人用彼此可区分的织物柱、折板、矿物块或橡胶模块保留准确人数与关系。
+- 手势、行走、借力、背负、并坐与远眺必须编码成真实的折、压、绑、吊、支撑、接触点或断裂路径；不能只把写实人物换成石膏质感。
+- 动物用一个完整材料体量和物种锚点保留数量、方向和尺度；不写实复制毛发，也不做标本。
+- 山体、建筑与地貌压缩为 2-4 个大材料板、轴线与 2-3 个身份轮廓，再通过错位、叠压、缺口、梁和支撑重组。
+- 画面只保留一个主动作、2-3 个主材料场和一块大静区。背景不复刻摄影层次；材料结构应成为第一读取层。
+- 缩到 10% 时，第一眼必须是材料装配，第二眼才能从数量、动作和身份锚点回认源图。如果仍像照片浮雕、油画摹写或滤镜，失败并定向重生成。
+
+Prompt 追加：
+
+```text
+Use the source image only as semantic evidence for exact subject count, relative positions, scale, facing directions, primary actions, interaction pattern and one or two identity anchors per subject. Radically recompose it as an original non-photographic material assemblage. Replace each person or animal with one distinct complete material body-vector; encode gesture, walking, support, carrying or shared attention through folds, tension, rods, contact points, straps and deliberate gaps rather than realistic anatomy. Compress landmarks and terrain into two to four large material slabs that retain the identity silhouette and central axis while changing the spatial construction. Do not preserve pixel layout, realistic faces, skin, clothing folds, photographic depth of field or literal landscape rendering. At thumbnail size the result must read first as a constructed material artwork and only second as the source relationship. Avoid photo embossing, painterly tracing, uniform plaster texture, deleted subjects, altered count and identical pegs.
+```
+
+人物 Prompt 追加规则：单人图加入 `Build exactly one continuous material body-vector with the original action direction and one or two identity anchors; no portrait likeness or realistic anatomy.`；多人图加入 `Build the exact visible figure count as distinct complete material body-vectors, preserving relative positions, scale, facing directions and interaction; do not use realistic portraits, identical pegs or decorative dots.`
 
 ## 配方 3：机器镜像剧场
 

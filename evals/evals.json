@@ -72,6 +72,18 @@
       "prompt": "按材料艺术语言规划一个30平方米小展览，入口要先看到一件，后面逐渐进入人机主题。",
       "expected_output": "Plans a coherent sequence with first sightline, scale, spacing, floor relation, lighting and movement; transitions from material memory to machine ethics through one shared material cue; and does not claim the exhibition is installed or structurally approved.",
       "files": []
+    },
+    {
+      "id": 13,
+      "prompt": "把这张有三个人和一只羊的山路照片做成材料艺术，直接出图。",
+      "expected_output": "Defaults to semantic-abstract rather than photo embossing; inspects and preserves the exact three-person and one-animal count, positions, directions, primary gestures and identity anchors; rebuilds them as distinct complete material body-vectors inside a recomposed material topography; and checks that the thumbnail reads as material construction before source recognition.",
+      "files": []
+    },
+    {
+      "id": 14,
+      "prompt": "刚才生成得太像原图，不适合。保留三个人、一只羊和手举过头的动作，但不要写实。",
+      "expected_output": "Treats the feedback as explicit authorization and switches to semantic-abstract without asking again; removes portrait likeness, skin, garment tracing and photographic depth; encodes the raised-hands action and group relation through folds, plates, tension and support; preserves exact count and relative placement; and rejects any result that still looks like a relief filter at thumbnail size.",
+      "files": []
     }
   ]
 }
