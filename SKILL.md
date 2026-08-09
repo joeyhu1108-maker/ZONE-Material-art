@@ -1,9 +1,9 @@
 ---
-name: gc-material-art
-description: 将主题、文本、照片、空间或材料清单转化为原创材料艺术、材料蒙太奇绘画、浮雕、装置、展陈方案、图像生成提示词或审稿意见。Use when the user explicitly asks for 材料艺术、材料蒙太奇、material art、material montage、material-based artwork、/gc-material-art，或需要诊断作品为何只有随机拼贴、表面材料效果、通用符号或不可信的装置结构。不要为普通拼贴、通用抽象画、艺术家履历查询、价格咨询或与材料艺术无关的图像编辑自动触发。
+name: zone-material-art
+description: 将主题、文本、照片、空间或材料清单转化为原创材料艺术、材料蒙太奇绘画、浮雕、装置、展陈方案、图像生成提示词或审稿意见。Use when the user explicitly asks for 材料艺术、材料蒙太奇、material art、material montage、material-based artwork、/zone-material-art，或需要诊断作品为何只有随机拼贴、表面材料效果、通用符号或不可信的装置结构。不要为普通拼贴、通用抽象画、艺术家履历查询、价格咨询或与材料艺术无关的图像编辑自动触发。
 ---
 
-# GC Material Art
+# ZONE-Material-art
 
 把现实中的矛盾转译成一件原创的材料叙事作品。这里保存的是艺术家中立、来源中立的材料艺术方法，不包含艺术家身份、履历、原作标题、价格、联系方式或参考图册。
 

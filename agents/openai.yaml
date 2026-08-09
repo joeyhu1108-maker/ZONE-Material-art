@@ -1,4 +1,4 @@
 interface:
-  display_name: "GC Material Art"
+  display_name: "ZONE-Material-art"
   short_description: "把现实矛盾转成原创材料蒙太奇绘画与装置"
-  default_prompt: "Use $gc-material-art to turn this subject into an original material artwork. Build the concept-material-space chain first, avoid copying any specific source artwork, and generate or review the requested deliverable."
+  default_prompt: "Use $zone-material-art to turn this subject into an original material artwork. Build the concept-material-space chain first, avoid copying any specific source artwork, and generate or review the requested deliverable."

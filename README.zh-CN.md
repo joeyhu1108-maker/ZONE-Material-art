@@ -1,4 +1,4 @@
-# GC Material Art
+# ZONE-Material-art
 
 这是一个艺术家中立的个人 Codex Skill。它从现实矛盾出发，为材料建立前史，再用拼接、穿插、交叠、并置和主动框架形成原创绘画或装置。
 
@@ -16,13 +16,13 @@
 在新任务中直接说：
 
 ```text
-使用 $gc-material-art，把“被算法改写的家庭相册”做成一件原创材料艺术作品。
+使用 $zone-material-art，把“被算法改写的家庭相册”做成一件原创材料艺术作品。
 ```
 
 也可以说：
 
 ```text
-用 GC Material Art 审查这张图，只给修改意见，不要重画。
+用 ZONE-Material-art 审查这张图，只给修改意见，不要重画。
 ```
 
 ```text
@@ -45,7 +45,7 @@
 ## 文件结构
 
 ```text
-gc-material-art/
+ZONE-Material-art/
 ├── SKILL.md
 ├── README.zh-CN.md
 ├── agents/openai.yaml
